@@ -32,10 +32,11 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
-				"python.defaultInterpreterPath": "/opt/conda/bin/python"
+				"python.defaultInterpreterPath": "/opt/conda/bin/python", 
+				"julia.executablePath": "/opt/julia-1.9.2/bin/julia"
 			},
 			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+			"extensions": ["ms-python.python", "ms-toolsai.jupyter", "julialang.language-julia", "REditorSupport.r"]
 		}
 	}
 	// Use 'postCreateCommand' to run commands after the container is created.

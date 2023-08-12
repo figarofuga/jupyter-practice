@@ -9,6 +9,6 @@
 		}
 	],
 	"settings": {
-		"julia.executablePath": "/usr/local/bin/julia"
+		"julia.executablePath": "/opt/julia-1.9.2/bin/julia"
 	}
 }
