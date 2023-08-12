@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "jupyter-practice",
+			"path": "."
+		}
+	],
+	"settings": {
+		"julia.executablePath": "/usr/local/bin/julia"
+	}
+}
