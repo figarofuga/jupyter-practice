@@ -8,12 +8,12 @@ RUN mamba install --yes 'py-xgboost' && \
 
 RUN mamba install --yes \
     'r-cowplot' \
-    'r-table1' && \
+    'r-gtsummary' && \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
-RUN julia -e 'using Pkg; Pkg.add(["HTTP", "CSV", "DataFrames", "Tidier", "DataFramesMeta", "RDatasets", "RCall"])'
+RUN julia -e 'using Pkg; Pkg.add(["HTTP", "CSV", "DataFrames", "Tidier", "DataFramesMeta", "RDatasets", "RCall", "Distributions", "GLM", "Plots", "StatsBase", "StatsModels", "StatsPlots"])'
 
 USER root
 # Generally, Dev Container Features assume that the non-root user (in this case jovyan)
