@@ -13,7 +13,7 @@ RUN mamba install --yes \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
-RUN julia -e 'using Pkg; Pkg.activate("."); Pkg.add(["HTTP", "CSV", "DataFrames", "Tidier", "DataFramesMeta", "RDatasets", "RCall"])'
+RUN julia -e 'using Pkg; Pkg.add(["HTTP", "CSV", "DataFrames", "Tidier", "DataFramesMeta", "RDatasets", "RCall"])'
 
 USER root
 # Generally, Dev Container Features assume that the non-root user (in this case jovyan)
