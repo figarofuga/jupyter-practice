@@ -8,6 +8,7 @@ RUN mamba install --yes 'py-xgboost' && \
 
 RUN mamba install --yes \
     'r-cowplot' \
+    'r-languageserver' \
     'r-gtsummary' && \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
