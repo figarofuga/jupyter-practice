@@ -12,6 +12,7 @@ dependencies:
   - scikit-learn
   - jupyter
   - quarto
+  - conda-lock
 platforms:
   - osx-arm64
   - linux-64
